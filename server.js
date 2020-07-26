@@ -6,7 +6,7 @@ app.use(morgan('combined'));
 app.use(express.static('public'));
 
 //setting the port
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 9005;
 
 //make way for some custom css, js and images
 app.use('/css', express.static(__dirname + '/public/css'));
