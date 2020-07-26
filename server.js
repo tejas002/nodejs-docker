@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require('morgan');
-var app = express();
+const app = express();
 
 app.use(morgan('combined'));
 app.use(express.static('public'));
@@ -14,7 +14,7 @@ app.use('/js', express.static(__dirname + '/public/js'));
 app.use('/images', express.static(__dirname + '/public/images'));
 
 
-var server = app.listen(port, function(){
-    var port = server.address().port;
+let server = app.listen(port, function(){
+    let port = server.address().port;
     console.log("Server started at http://localhost:%s", port);
 });
