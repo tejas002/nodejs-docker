@@ -1,5 +1,5 @@
 # Pull the node image from docker hub
-FROM node:12.18-alpine
+FROM node:12.22.3-alpine
 
 #Setting environment variable
 ENV NODE_ENV production
